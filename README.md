@@ -28,9 +28,9 @@
     	python -m ipykernel install --user --name=my-project-env --display-name "Python (my-project-env)"
 
 ## 4. Run Notebook Locally
-    - Launch JupyterLab from repo root:
-    	jupyter lab
-    - Open notebooks/my_notebook.ipynb and select kernel Python (my-project-env).
+   ### Launch JupyterLab from repo root:
+       jupyter lab
+   ### Open notebooks/my_notebook.ipynb and select kernel Python (my-project-env).
 
 ## 5. Add Dependencies
     Install packages as needed (pip install or conda install).
