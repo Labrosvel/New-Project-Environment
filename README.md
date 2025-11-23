@@ -19,12 +19,12 @@
     - Commit it
 
 ## 3. Set Up Conda Environment
-    ### Create a new environment:
+    - Create a new environment:
     	conda create -n my-project-env python=3.10
 		conda activate my-project-env
-    ### Install JupyterLab:
+    - Install JupyterLab:
     	conda install -c conda-forge jupyterlab ipykernel
-    ### Register kernel:
+    - Register kernel:
     	python -m ipykernel install --user --name=my-project-env --display-name "Python (my-project-env)"
 
 ## 4. Run Notebook Locally
