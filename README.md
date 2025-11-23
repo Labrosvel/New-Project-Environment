@@ -21,7 +21,7 @@
 ## 3. Set Up Conda Environment
     - Create a new environment:
     	conda create -n my-project-env python=3.10
-	conda activate my-project-env
+		conda activate my-project-env
     - Install JupyterLab:
     	conda install -c conda-forge jupyterlab ipykernel
     - Register kernel:
@@ -41,14 +41,14 @@
 ## 6. Keep Repo Clean
     Add .gitignore:
     	.ipynb_checkpoints/
-	__pycache__/
-	data/
-	models/
-	*.log
+		__pycache__/
+		data/
+		models/
+		*.log
     Commit it:
     	git add .gitignore
-	git commit -m "Add gitignore for checkpoints, data, models"
-	git push origin main
+		git commit -m "Add gitignore for checkpoints, data, models"
+		git push origin main
 
 ## 7. Reproducibility
 
