@@ -39,16 +39,16 @@
         → This captures both conda and pip packages.
 
 ## 6. Keep Repo Clean
-    Add .gitignore:
-    	.ipynb_checkpoints/
-		__pycache__/
-		data/
-		models/
-		*.log
-    Commit it:
-    	git add .gitignore
-		git commit -m "Add gitignore for checkpoints, data, models"
-		git push origin main
+   ### Add  .gitignore:
+    		.ipynb_checkpoints/
+			__pycache__/
+			data/
+			models/
+			*.log
+   ### Commit it:
+    		git add .gitignore
+			git commit -m "Add gitignore for checkpoints, data, models"
+			git push origin main
 
 ## 7. Reproducibility
 
