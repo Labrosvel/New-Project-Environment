@@ -1,5 +1,4 @@
-
-## STEP 1 — Make your project folder structure
+## STEP — Make your project folder structure
     waste_classifier_app/
     │
     ├── model/
@@ -10,20 +9,32 @@
     │
     ├── requirements.txt
     └── README.md
+    
+## STEP — Create requirements.txt
 
-## STEP 2 — Convert notebook code into clean Python functions
-  - load model
-  - preprocess image
-  - predict class
+## STEP - Create the Streamlit App
 
-## STEP 3 — Build the Streamlit UI
+## STEP - Create README.md
 
-Users can:
-✔ upload image
-✔ click “Predict”
-✔ see the predicted class
+## STEP - Test Locally
 
-## STEP 4 — Deploy to Streamlit Cloud
+## STEP - Deploy to Streamlit Cloud
+   - Push repository to GitHub
+   - Go to: https://share.streamlit.io
+   - Click New App
+   - Choose repo + branch
+   - Set:
+      - Main file: app/streamlit_app.py
+      - Python version: 3.9 or 3.10
+      - Requirements file: requirements.txt
 
-Medium difficulty: 1/10
-Deploy time: 5 minutes
+## 👉 Next Steps (optional)
+1. Add a pricing paywall (Stripe)
+2. Add a FastAPI backend for scaling
+3. Dockerize the service
+4. Add logging / analytics
+5. Build a dark-theme UI
+6. Deploy to AWS/GCP/Azure
+7. Turn this into a real SaaS
+
+
