@@ -8,3 +8,15 @@
 7. pip install -r requirements.txt               # clone to new environment
 8. rm -rf <env_name>                             # remove environment
 
+## Conda environment
+1. conda create --name myenv python=3.10                            # Create new environment
+2. conda activate myenv                                             # Activate it
+3. conda deactivate                                                 # Deactivate it
+4. conda list                                                       # See what's in the base environment
+5. conda activate base                                              
+6. conda env export > base_environment.yml                          # Export env to a file
+7. conda activate myenv
+8. conda env create --name clonedenv --file base_environment.yml    # Clone base into a new env
+9. conda remove --name myenv --all                                  # Remove env
+10. conda env update --name myenv --file environment.yml --prune    # Update env
+11. conda env list                                                  # conda environment list
