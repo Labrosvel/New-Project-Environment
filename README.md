@@ -1,4 +1,4 @@
-# 🧩 End‑to‑End Process for a New Project
+# 🧩 Create the environment
 ## 1. Create the Repo & Structure
    ### On GitHub (or locally, then push):
         Create a new repo: my-project-name
@@ -40,22 +40,21 @@
 
 ## 6. Keep Repo Clean
    ### Add  .gitignore:
-    		.ipynb_checkpoints/
-			__pycache__/
-			data/
-			models/
-			*.log
+		.ipynb_checkpoints/
+		__pycache__/
+		data/
+		models/
+		*.log
    ### Commit it:
-    		git add .gitignore
-			git commit -m "Add gitignore for checkpoints, data, models"
-			git push origin main
+		git add .gitignore
+		git commit -m "Add gitignore for checkpoints, data, models"
+		git push origin main
 
 ## 7. Reproducibility
-
-    Anyone (or future you) can recreate the environment:
-    	conda env create -f environment.yml
-    Update env when new packages are added:
-    	conda env update -f environment.yml --prune
+   - Anyone (or future you) can recreate the environment:
+     	- conda env create -f environment.yml
+   - Update env when new packages are added:
+     	- conda env update -f environment.yml --prune
 
 🔄 Your Repeatable Checklist
     1. Repo + structure
