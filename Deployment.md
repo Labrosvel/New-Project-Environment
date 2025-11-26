@@ -1,33 +1,95 @@
-## STEP — Make your project folder structure
+## 📁 1. Project Folder Structure
     waste_classifier_app/
     │
     ├── model/
-    │   └── waste_model.h5
+    │   └── waste_model.keras          # Final trained model
     │
     ├── app/
-    │   └── streamlit_app.py
+    │   └── streamlitapp.py            # Streamlit frontend
     │
-    ├── requirements.txt
+    ├── notebooks/
+    │   └── model_training.ipynb       # Training + experimentation
+    │
+    ├── requirements.txt               # For deployment (Streamlit Cloud)
+    ├── environment.yml                # For local reproducibility (Conda)
     └── README.md
+
     
-## STEP — Create requirements.txt
+## 🐍 2. Environment Management (Conda)
 
-## STEP - Create the Streamlit App
+You originally trained your model in a Conda environment.
+To maintain consistency, always recreate it via:
 
-## STEP - Create README.md
+    conda env create -f environment.yml
+    conda activate waste-classifier
 
-## STEP - Test Locally
+(Replace with the name defined in the file.)
 
-## STEP - Deploy to Streamlit Cloud
-   - Push repository to GitHub
-   - Go to: https://share.streamlit.io
-   - Click New App
-   - Choose repo + branch
-   - Set:
-      - Main file: app/streamlit_app.py
-      - Python version: 3.9 or 3.10
-      - Requirements file: requirements.txt
+This ensures the notebook runs identically next week, next month, or next year.
 
+💡 Use Conda for local development,
+but use requirements.txt for Streamlit Cloud (it doesn't support Conda).
+
+## 📦 3. Create / Update requirements.txt (For Deployment)
+
+Inside the activated Conda env:
+
+    pip freeze > requirements.txt
+
+Then manually clean it so it contains only what Streamlit Cloud needs:
+
+    streamlit
+    tensorflow
+    numpy
+    pillow
+    scikit-learn
+Add more libraries only if your app uses them.
+
+## 🎨 4. Create the Streamlit App
+Your entry point must be:
+    app/streamlitapp.py
+Core components:
+- Load model from model/waste_model.keras
+- Load image
+- Resize
+- Scale (divide by 255)
+- Predict
+- Display class + probability
+
+## 📝 5. Create README.md
+Your README should include:
+- Project overview
+- How to run locally
+- Folder structure
+- How to retrain
+- How to redeploy
+- Streamlit Cloud link
+
+## 🧪 6. Test Locally
+From project root:
+    conda activate waste-classifier
+    streamlit run app/streamlitapp.py
+Verify:
+- Model loads
+- Prediction works
+- UI renders correctly
+
+## 🚀 7. Deploy to Streamlit Cloud
+1. Push repository to GitHub.
+2. Go to: https://share.streamlit.io
+3. Click New App
+4.Configure:
+- Repo: waste_classifier_app
+- Branch: main
+- Main file: app/streamlitapp.py
+- Python version: 3.9 or 3.10
+- Requirements file: requirements.txt
+5. Click Deploy
+Streamlit Cloud will:
+- Install dependencies
+- Load your model file
+- Run your app
+  
 ## 👉 Next Steps (optional)
 1. Add a pricing paywall (Stripe)
 2. Add a FastAPI backend for scaling
