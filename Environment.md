@@ -1,6 +1,6 @@
 ## Python environment
 1. pythonx.x -m venv <env_name>    # create env
-2. source <nev_name>/bin/activate  # activate it
+2. source <env_name>/bin/activate  # activate it
 3. deactivate                      # deactivate it
 4. pip list                        # see what's in the environment
 5. pip freeze > requirements.txt   # export environment
