@@ -75,20 +75,20 @@ Verify:
 - UI renders correctly
 
 ## 🚀 7. Deploy to Streamlit Cloud
-1. Push repository to GitHub.
-2. Go to: https://share.streamlit.io
-3. Click New App
-4.Configure:
-- Repo: waste_classifier_app
-- Branch: main
-- Main file: app/streamlitapp.py
-- Python version: 3.9 or 3.10
-- Requirements file: requirements.txt
-5. Click Deploy
-Streamlit Cloud will:
-- Install dependencies
-- Load your model file
-- Run your app
+    1. Push repository to GitHub.
+    2. Go to: https://share.streamlit.io
+    3. Click New App
+    4.Configure:
+    - Repo: waste_classifier_app
+    - Branch: main
+    - Main file: app/streamlitapp.py
+    - Python version: 3.9 or 3.10
+    - Requirements file: requirements.txt
+    5. Click Deploy
+    Streamlit Cloud will:
+    - Install dependencies
+    - Load your model file
+    - Run your app
   
 ## 👉 Next Steps (optional)
 1. Add a pricing paywall (Stripe)
