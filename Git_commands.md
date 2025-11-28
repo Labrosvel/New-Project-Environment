@@ -46,18 +46,18 @@
 - git actions as usual
 
 # Git synchronisation
-## Verify branches status
+## 1. Verify branches status
 - git status
 - git branch
 - git branch -r
-## Check sync status
+## 2. Check sync status
 - git branch -vv
 - git checkout branchname
 - git branch --set-upstream-to=origin/branchname branchname
 - git branch -vv
 - git push origin branchname
 - git pull
-## Check dev and master are on the same commit
+## 3. Check dev and master are on the same commit
 - git checkou branch1
 - git log branch2..branch1
 - git checkout branch2
