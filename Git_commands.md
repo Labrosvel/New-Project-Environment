@@ -33,6 +33,7 @@
 - git reflog
 - git tag <tagname>
 - git push origin <tagname>
+- git push origin --tags
 - git tag
 - git push origin --delete branchname
 - git branch -vv
