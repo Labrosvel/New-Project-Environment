@@ -18,7 +18,7 @@
 7. **conda activate myenv**
 8. **conda env create --name clonedenv --file base_environment.yml**    *# Clone base into a new env*
 9. **conda remove --name myenv --all**                                  *# Remove env*
-10. **conda env update --name myenv --file environment.yml --prune**    *# Update env*
+10. **conda env update --name myenv --file environment.yml --prune**    *# Update env removing packages not in YAML*
 11. **conda env list**                                                  *# conda environment list*
 
 ## Kernel
