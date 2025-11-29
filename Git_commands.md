@@ -24,6 +24,7 @@
 - git log
 - git branch ( , -a, -r)
 - git merge branchname
+- git push origin branchname (--force)
 - git branch -d branchname
 - git checkout -b branchname
 - git stash (-k)
