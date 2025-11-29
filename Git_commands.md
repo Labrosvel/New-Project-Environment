@@ -31,7 +31,8 @@
 - git branch -m newname
 - git clone url newname
 - git reflog
-- git tag tagname
+- git tag <tagname>
+- git push origin <tagname>
 - git tag
 - git push origin --delete branchname
 - git branch -vv
