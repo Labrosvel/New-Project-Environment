@@ -20,3 +20,11 @@
 9. **conda remove --name myenv --all**                                  *# Remove env*
 10. **conda env update --name myenv --file environment.yml --prune**    *# Update env*
 11. **conda env list**                                                  *# conda environment list*
+
+## Kernel
+1. **jupyter kernelspec list**    # lists all available kernels
+2. **jupyter kernelspec remove <kernel_name>**    # removes the kernel
+3. **python -m ipykernel install --user --name=<kernel_name> --display-name 'Python (kernel_name)'**    #(Re-)registers a kernel
+
+
+
