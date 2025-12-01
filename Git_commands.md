@@ -35,6 +35,8 @@
 - git push origin \<tagname\>
 - git push origin --tags
 - git tag
+- git tag -d \<tagname\>
+- git push --delete origin \<tagname\>
 - git push origin --delete branchname
 - git branch -vv
 - git branch --set-upstream-to=origin/branchname branchname
