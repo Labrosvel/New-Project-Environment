@@ -27,6 +27,7 @@
 - git push origin branchname (--force)
 - git branch -d branchname
 - git checkout -b branchname
+- git checkout -b localbranch  origin/remotebranch
 - git stash (-k)
 - git branch -m newname
 - git clone url newname
