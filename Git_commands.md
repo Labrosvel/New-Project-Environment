@@ -17,6 +17,7 @@
 ## Standard git
 - git add filename
 - git add *
+- git reset *#reverses the git add command*
 - git commit -m 'message'
 - git branch branchname
 - git checkout branchname
