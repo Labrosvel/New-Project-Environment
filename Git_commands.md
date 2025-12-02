@@ -18,6 +18,7 @@
 - git add filename
 - git add *
 - git reset *#reverses the git add command*
+- git add -u *#only adds files in the not staged status excluding untracked files*
 - git commit -m 'message'
 - git branch branchname
 - git checkout branchname
