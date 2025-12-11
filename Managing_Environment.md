@@ -20,7 +20,7 @@
 9. **conda remove --name myenv --all**                                  *# Remove env*
 10. **conda env update --name myenv --file environment.yml --prune**    *# Update env removing packages not in YAML*
 11. **conda env list**                                                  *# conda environment list*
-12. **conda install -c conda-forge streamlit**
+12. **conda install -c conda-forge <package_name>**
 
 ## Kernel
 1. **jupyter kernelspec list**    *# lists all available kernels*
