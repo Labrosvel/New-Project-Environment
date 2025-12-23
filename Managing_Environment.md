@@ -17,10 +17,11 @@
 6. **conda env export > base_environment.yml**                          *# Export env to a file*
 7. **conda activate myenv**
 8. **conda env create --name clonedenv --file base_environment.yml**    *# Clone base into a new env*
-9. **conda remove --name myenv --all**                                  *# Remove env*
-10. **conda env update --name myenv --file environment.yml --prune**    *# Update env removing packages not in YAML*
-11. **conda env list**                                                  *# conda environment list*
-12. **conda install -c conda-forge <package_name>**
+9. **conda env create -f <file.yml>**                                   *# Create env from file.yml*
+10. **conda remove --name myenv --all**                                  *# Remove env*
+11. **conda env update --name myenv --file environment.yml --prune**    *# Update env removing packages not in YAML*
+12. **conda env list**                                                  *# conda environment list*
+13. **conda install -c conda-forge <package_name>**
 
 ## Kernel
 1. **jupyter kernelspec list**    *# lists all available kernels*
