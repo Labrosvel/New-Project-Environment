@@ -1,3 +1,5 @@
+# ENVIRONMENT
+---
 ## Python environment
 1. **python3 -m venv <env_name>**                    *# create env*
 2. **source <env_name>/bin/activate**                *# activate it*
@@ -27,6 +29,8 @@
 2. **jupyter kernelspec remove <kernel_name>**    *# removes the kernel*
 3. **python -m ipykernel install --user --name=<kernel_name> --display-name 'Python (kernel_name)'**    *#(Re-)registers a kernel*
 
+# GIT
+---
 ## Initiate git
 1. mkdir dirname
 2. cd dirname
