@@ -9,7 +9,7 @@
 8. **rm -rf <env_name>**                             *# remove environment*
 
 ## Conda environment
-1.**conda env list**                                                    *# conda environment list*
+1. **conda env list**                                                    *# conda environment list*
 2. **conda create --name myenv python=3.10**                            *# Create new environment*
 3. **conda activate myenv**                                             *# Activate it*
 4. **conda deactivate**                                                 *# Deactivate it*
